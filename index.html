@@ -10,8 +10,21 @@
     <meta name="description" content="Restaurante en Ibiza – Restaurante italiano y francés">
     <meta name="description" content="Restaurant in Ibiza – Italian and French restaurant">
     <meta name="description" content="Restaurant in Ibiza – Italienisches und französisches Restaurant">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <header>
+       <!-- Sélecteur de langues avec drapeaux -->
+      <label for="language-selector" style="margin-left: 10px;"></label>
+      <select id="language-selector" onchange="changeLang(this.value)" aria-label="Language selector">
+        <option value="es">🇪🇸 Español</option>
+        <option value="en">🇬🇧 English</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="nl">🇳🇱 Nederlands</option>
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="it">🇮🇹 Italiano</option>
+      </select>
+    </nav>
+  </header>
 <!-- Menu -->
     <section id="menu">
     <div class="menu-nav">
@@ -389,8 +402,8 @@
       
      <style>
       body {
-        background-color: #fff;
-        color: #000;
+        background-color: #000;
+        color: #fff;
          font-family: 'Cormorant Garamond', serif;
         margin: 0;
         padding: 0;
@@ -400,7 +413,7 @@
          nav button, nav select {
         background: transparent;
         border: none;
-        color: black;
+        color: white;
         font-weight: 600;
         margin-left: 1rem;
         cursor: pointer;
@@ -474,7 +487,7 @@
   .menu-nav button {
     background: transparent;
     border: 1px solid #ccc;
-    color: #000;
+    color: #fff;
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 25px;
@@ -483,7 +496,7 @@
   }
 
   .menu-nav button:hover {
-    background: #fff;
+    background: #f0f0f0;
     border-color: #999;
   }
 
