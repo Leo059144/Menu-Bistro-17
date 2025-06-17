@@ -410,6 +410,23 @@
         
         
       }
+       select {
+  font-size: 1.2rem;           /* Agrandit le texte */
+  padding: 10px 16px;          /* Espace intérieur plus grand */
+  border-radius: 8px;          /* Coins arrondis */
+  border: 1px solid #ccc;      /* Bord doux */
+  background-color: #f8f8f8;   /* Couleur de fond claire */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  appearance: none;            /* Supprime le style natif (pour plus de contrôle) */
+  cursor: pointer;             /* Curseur main */
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  background-color: #eaeaea;   /* Changement léger au survol */
+  border-color: #aaa;
+}
+
          nav button, nav select {
         background: transparent;
         border: none;
