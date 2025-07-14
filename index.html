@@ -24,6 +24,7 @@
         <option value="it">🇮🇹 Italiano</option>
       </select>
     </nav>
+     <button id="theme-toggle" aria-label="Basculer le thème">🌙</button>
   </header>
 <!-- Menu -->
     <section id="menu">
@@ -411,6 +412,23 @@
         
         
       }
+           /* 1. THEME TOKENS */
+    :root {
+      --bg-color: #000;
+      --text-color: #fff;
+      --accent-bg: #fff;   /* Boutons nav */
+      --accent-text: #000;
+      --border-color: #ccc;
+    }
+
+    /* Light‑theme overrides */
+    .light-theme {
+      --bg-color: #fff;
+      --text-color: #000;
+      --accent-bg: #fff;
+      --accent-text: #000;
+      --border-color: #666;
+    }
        select {
   font-size: 1.2rem;           /* Agrandit le texte */
   padding: 10px 16px;          /* Espace intérieur plus grand */
