@@ -1478,7 +1478,13 @@ select:hover {
 
     }
   };
-    
+     // Basculer Dark/Light
+    const btn = document.getElementById('theme-toggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      // Change icon
+      btn.textContent = document.body.classList.contains('light-theme') ? '🌙' : '☀️';
+    });
      const defaultLang = 'es';
       changeLang(defaultLang);
    </script>
